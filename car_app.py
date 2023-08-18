@@ -42,7 +42,7 @@ owner=st.selectbox('owner',df['owner'].unique())
 if st.button('Predict Car Price'):
         
 
-        pred = model.predict([[Brand,year,km_driven,fuel,seller_type,transmission,owner]])
+        pred = model.predict([[brand,year,km_driven,fuel,seller_type,transmission,owner]])
         output = round(pred[0],2)
         if pred < 0: # handeling negative outputs.
             st.error('The input values must be irrelevant, try again by giving relevent information.')
