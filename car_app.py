@@ -30,7 +30,7 @@ st.header('Fill the details to predict car Price')
 
 
 
-Brand=st.selectbox('brand',df['brand'].unique())
+brand=st.selectbox('brand',df['brand'].unique())
 year=st.selectbox('year is',[2017, 2012, 2015, 2014, 2013, 2018, 2016])
 km_driven=st.selectbox('km_driven',df['km_driven'].unique())
 fuel=st.selectbox('fuel',['Petrol','Diesel','CNG','LPG','Electric'])
